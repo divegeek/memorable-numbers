@@ -1,3 +1,5 @@
+// Copyright 2012, Google Inc.  All Rights Reserved.
+
 package org.willden.wordmap;
 
 import static org.junit.Assert.assertEquals;
@@ -8,6 +10,11 @@ import java.math.BigInteger;
 import org.junit.Before;
 import org.junit.Test;
 
+/**
+ * Tests for WordMapper
+ *
+ * @author shawn@willden.org (Shawn Willden)
+ */
 public class WordMapperTest {
 
     private static final String[] TINY_DICTIONARY = { "0", "1" };
@@ -101,6 +108,7 @@ public class WordMapperTest {
         mapper = new WordMapper(DefaultDictionary.SMALL_DICTIONARY);
         words = mapper.longToWords(jennysNumber);
         assertEquals("about fill liar mail", words);
+        System.out.println(mapper.longToWords(3506928));
     }
 
 

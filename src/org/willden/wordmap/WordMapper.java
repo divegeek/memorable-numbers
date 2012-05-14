@@ -1,3 +1,5 @@
+// Copyright 2012, Google Inc.  All Rights Reserved.
+
 package org.willden.wordmap;
 
 import java.io.BufferedReader;
@@ -20,6 +22,8 @@ import java.util.StringTokenizer;
  * For example, a help desk support ticket #28223847 would translate to "admit radar could",
  * an odd sequence of words, but much more memorable than the number, and for most touch
  * typists, faster to type as well.
+ *
+ * @author shawn@willden.org (Shawn Willden)
  */
 public class WordMapper {
     private final Map<String, Integer> wordMap;

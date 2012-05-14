@@ -1,3 +1,5 @@
+// Copyright 2012, Google Inc.  All Rights Reserved.
+
 package org.willden.wordmap;
 
 public class DefaultDictionary {
