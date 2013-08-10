@@ -34,7 +34,7 @@ public class WordMapper {
      * Creates a WordMapper instance that uses the large, 4096-word, default dictionary.
      */
     public WordMapper() {
-        this(DefaultDictionary.LARGE);
+        this(new LargeDictionary());
     }
 
     /**
@@ -48,16 +48,16 @@ public class WordMapper {
 
     /**
      * Creates a WordMapper instance with the provided dictionary.  The elements of the
-     * dictionary must be distinct and contain no embedded whitespace.
+     * dictionary must contain no embedded whitespace.
      */
-    public WordMapper(String[] dict) {
-        dictionary = dict;
+    public WordMapper(Dictionary dict) {
+        dictionary = dict.getWords();
         HashMap<String, Integer> wordMap1 = new HashMap<String, Integer>();
         for (int i = 0; i < dictionary.length; ++i) {
             wordMap1.put(dictionary[i], i);
         }
         wordMap = wordMap1;
-        dictLength = new BigInteger(Integer.toString(dict.length));
+        dictLength = new BigInteger(Integer.toString(dictionary.length));
     }
 
     /**
@@ -171,8 +171,8 @@ public class WordMapper {
         }
     }
 
-    private static String[] parseDictionary(Reader input) throws IOException {
-        ArrayList<String> dictionaryList = new ArrayList<String>();
+    private static Dictionary parseDictionary(Reader input) throws IOException {
+        final ArrayList<String> dictionaryList = new ArrayList<String>();
 
         BufferedReader reader = new BufferedReader(input);
         String word;
@@ -180,11 +180,14 @@ public class WordMapper {
             dictionaryList.add(word);
         }
 
-        String[] dictionary = new String[dictionaryList.size()];
-        for (int pos = 0; pos < dictionary.length; ++pos) {
-            dictionary[pos] = dictionaryList.get(pos);
-        }
-        return dictionary;
+        return new Dictionary() {
+
+            @Override
+            public String[] getWords() {
+                return dictionaryList
+                        .toArray(new String[dictionaryList.size()]);
+            }
+        };
     }
 
     private int mapWord(String word) {
@@ -223,6 +226,5 @@ public class WordMapper {
                 }
             };
         }
-
     }
 }
