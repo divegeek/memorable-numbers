@@ -2,28 +2,28 @@ First, credit where credit is due: This little project was sparked by
 the XKCD commit on password security (http://xkcd.com/936/).
 
 The comic is about the amount of entropy contained in a passphrase of
-a few short, common, memorabl words.  In the comic, the idea is to use
-these words in place of a shorter, but more complicated and less
+a few short, common, memorable words.  In the comic, the idea is to
+use these words in place of a shorter, but more complicated and less
 memorable password.  It occurred to me, though, that I manage lots of
-long numbers, and that it's hard to do.
+long numbers, and that's hard to do.
 
 At work, there are bug ID numbers, changelist numbers, user ID
 numbers, etc.  These are all just long enough that they're not only
 not memorizable, they don't even stick in short-term memory well
-enough that I can glance at one, switch to a different tab or window,
-and retype it.  So I copy and paste a lot, which is fine, but
-sometimes the numbers are (helpfully!) hyperlinks, which makes
-selecting them for copying without clicking on them hard.
+enough to glance at one, switch to a different tab or window, and
+retype it.  So I copy and paste a lot, which is fine, but sometimes
+the numbers are (helpfully!) hyperlinks, which makes selecting them
+for copying without clicking on them hard.
 
 In the rest of my life, there are lots of phone numbers.  In practice
-I keep them all in my phone so I never have to know what they
-are... but if I don't have my phone, I'm sunk, outside of a very small
-group of numbers that I keep memorized.
+I keep them all in my phone so I never have to know what they are, but
+if I don't have my phone, I'm sunk, outside of a very small group of
+numbers that I keep memorized.
 
-So, what if... we actually defined a mapping from a dictionary of
-common words onto numbers, and then used that to build a nice number
-to word-sequence translation tool?  If the translation were built into
-all the appropriate places, we could just use either numbers or words,
+So, what if we define a mapping from a dictionary of common words onto
+numbers, and then use that to build a nice number to word-sequence
+translation tool?  If the translation were built into all the
+appropriate places, we could just use either numbers or words,
 whichever is convenient.
 
 For example, where I work we have a web interface to the change
@@ -34,17 +34,17 @@ easily typed.  In experimenting with it, I even found that although
 it's more keystrokes, I can type a sequence of simple words faster
 than a number.
 
-Then I started playing with phone numbers... and I found that I can
-map phone numbers onto a three-word sequence, making them really easy
-to remember.  For example, my old home phone number translates as
-"calm restore utterly".  I find that far easier to remember than
+Then I started playing with phone numbers and I found that I can map
+phone numbers onto a three-word sequence, making them really easy to
+remember.  For example, my old home phone number translates as "calm
+restore utterly".  I find that far easier to remember than
 801-479-0406 (note that I don't know if someone has that number; don't
 call and bother them, please, you won't get me!).  Of course, if you
 live in Utah you don't really have to "remember" 801 -- because nearly
 all of the numbers are 801... but the same holds true here.  Pretty
 much all 801 numbers translate to strings with "calm" as the first
-word.  So someone would really only have to remember "restore
-utterly" to know my number.
+word.  So someone would really only have to remember "restore utterly"
+to know my number.
 
 A mobile phone interface using this could use the standard type-ahead
 features, but restricted to the known dictionary, so you could
@@ -67,3 +67,15 @@ shorter and more common.
 In both cases I tried to weed out homonyms and words which are often
 hard to spell.  I also excluded offensive words.  I'm sure more can be
 done to improve these dictionaries, but they're pretty usable.
+
+Note that I also looked at the diceware list, and at Beale's
+alternative list, and discarded them. There may be some useful ideas
+that can be gleaned by studying the lists, but the difference between
+those lists and my large list is mostly "words" that are either very
+obscure or else not really words at all. There are lots of numbers and
+symbols. Those are good for passwords, but not very memorable or easy
+to exchange verbally. And the additional 3680 words only add 0.925
+bits of entropy per word used, so they don't really help all that
+much.
+
+However, I have added them in case someone wants to try them.
