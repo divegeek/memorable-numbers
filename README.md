@@ -1,5 +1,5 @@
 First, credit where credit is due: This little project was sparked by
-the XKCD commit on password security (http://xkcd.com/936/).
+the XKCD comic on password security (http://xkcd.com/936/).
 
 The comic is about the amount of entropy contained in a passphrase of
 a few short, common, memorable words.  In the comic, the idea is to
