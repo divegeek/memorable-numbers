@@ -19,7 +19,7 @@ for copying without clicking on them hard.
 
 In the rest of my life, there are lots of phone numbers.  In practice
 I keep them all in my phone so I never have to know what they are, but
-if I don't have my phone, I'm sunk, outside of a very small group of
+if I don't have my phone, I'm sunk, outside of a very small set of
 numbers that I keep memorized.
 
 So, what if we define a mapping from a dictionary of common words onto
@@ -33,7 +33,7 @@ management system.  If that web interface displayed a sequence of
 three simple words next to each change number, it would be really easy
 to shout a "number" over the cubicle wall and have it understood and
 easily typed.  In experimenting with it, I even found that although
-it's more keystrokes, I can type a sequence of simple words faster
+it's more keystrokes I can type a sequence of simple words faster
 than a number.
 
 Then I started playing with phone numbers and I found that I can map
