@@ -1,5 +1,5 @@
 First, credit where credit is due: This little project was sparked by
-the XKCD comic on password security:
+this XKCD comic on password security (https://xkcd.com/936/):
 
 ![https://xkcd.com/936/](https://imgs.xkcd.com/comics/password_strength.png)
 
