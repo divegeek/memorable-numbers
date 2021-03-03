@@ -116,10 +116,10 @@ although
 always
 am
 amateur
+amateurs
 amazing
 ambition
 america
-american
 among
 amongst
 amount
@@ -346,6 +346,7 @@ bid
 big
 bigger
 biggest
+bijecttive
 bill
 billy
 bind
@@ -353,6 +354,7 @@ binding
 binomial
 bird
 birth
+bisect
 bit
 bite
 bitter
@@ -496,11 +498,11 @@ captain
 car
 carbon
 card
+cardioid
 care
 career
 careful
 carl
-carleton
 carriage
 carried
 carries
@@ -583,7 +585,6 @@ choice
 choose
 chose
 chosen
-christ
 church
 churches
 circle
@@ -635,6 +636,7 @@ coarse
 coast
 coat
 coating
+cocked
 cocktail
 code
 coffee
@@ -704,7 +706,6 @@ control
 cook
 cooking
 cool
-coolidge
 cooling
 cope
 copper
@@ -741,7 +742,6 @@ crack
 craft
 crash
 crawled
-crazy
 cream
 create
 created
@@ -1049,7 +1049,6 @@ eggs
 eight
 eighth
 either
-ekstrohm
 elaine
 elastic
 elder
@@ -1085,7 +1084,9 @@ endless
 enemies
 enemy
 energy
+enforce
 enforced
+engage
 engaged
 engine
 engineer
@@ -1438,7 +1439,6 @@ gate
 gather
 gathered
 gave
-gay
 gear
 gen
 general
@@ -1647,6 +1647,7 @@ holy
 home
 homemade
 homework
+homomorphic
 honest
 honesty
 honey
@@ -1691,8 +1692,10 @@ husband
 hut
 hydrogen
 ice
+icosahedron
 idea
 ideal
+idempotent
 identify
 identity
 idle
@@ -1746,6 +1749,8 @@ informed
 inherent
 inhibit
 initial
+inject
+injective
 injure
 injured
 injury
@@ -1824,9 +1829,7 @@ jealous
 jealousy
 jean
 jersey
-jesus
 jet
-jew
 jewel
 jewish
 job
@@ -2270,7 +2273,6 @@ myself
 mystery
 myth
 nail
-naked
 name
 named
 namely
@@ -2294,8 +2296,6 @@ needed
 needle
 negative
 neglect
-negro
-negroes
 neighbor
 neither
 nephew
@@ -2307,6 +2307,7 @@ network
 neutral
 never
 new
+newton
 newer
 newly
 newport
@@ -3175,8 +3176,6 @@ several
 severe
 sew
 sewage
-sex
-sexual
 shade
 shadow
 shake
@@ -3532,6 +3531,7 @@ supreme
 sure
 surely
 surface
+surjective
 surplus
 surprise
 surround
